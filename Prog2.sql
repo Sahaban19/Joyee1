@@ -10,3 +10,16 @@ CREATE TABLE Employee (
     salary DECIMAL(10, 2),
     manager_id INT
 );
+/*show the employee first_name, last_name ,salary and the salary after 1000 bonus*/
+SELECT 
+    first_name AS f_name, 
+    last_name AS l_name, 
+    salary,
+    (salary + 1000) AS salary_after_bonus
+FROM 
+    Employee;
+/*Show the employees annual salary with a 1000rs. Yearly bonus and the annual salary
+
+with a 100rs. Monthly bonus.*/
+
+
