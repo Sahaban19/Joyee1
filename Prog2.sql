@@ -29,5 +29,10 @@ SELECT
 FROM 
     Employee;
 /*Show f_name as NAME and annual salary as ANNSAL from the employee table.*/
+SELECT 
+    first_name AS NAME, 
+    salary * 12 AS ANNSAL
+FROM 
+    Employee;
 
 
