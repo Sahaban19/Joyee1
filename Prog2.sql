@@ -21,5 +21,13 @@ FROM
 /*Show the employees annual salary with a 1000rs. Yearly bonus and the annual salary
 
 with a 100rs. Monthly bonus.*/
+SELECT 
+    first_name AS f_name, 
+    last_name AS l_name, 
+    salary * 12 + 1000 AS annual_salary_with_yearly_bonus,
+    salary * 12 + (100 * 12) AS annual_salary_with_monthly_bonus
+FROM 
+    Employee;
+/*Show f_name as NAME and annual salary as ANNSAL from the employee table.*/
 
 
